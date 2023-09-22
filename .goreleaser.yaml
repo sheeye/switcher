@@ -14,6 +14,11 @@ builds:
       - "6"
     goamd64:
       - v1
+    ignore:
+      - goos: windows
+        goarch: arm
+      - goos: windows
+        goarch: arm64
 archives:
   - files:
       - config.json
